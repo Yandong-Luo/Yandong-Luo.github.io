@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Yandong Luo">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://yandong-luo.github.io//img/car1.jpg">
+    <meta property="twitter:image" content="https://yandong-luo.github.io//img/car1.jpg" />
+    
+
+    
+    <meta name="title" content="坐标系变化" />
+    <meta property="og:title" content="坐标系变化" />
+    <meta property="twitter:title" content="坐标系变化" />
+    
+
+    
+    <meta name="description" content="Some of my notes are recorded here, including C/C&#43;&#43;, Robotics, ROS, Machine Learning, Deep Learning, etc.">
+    <meta property="og:description" content="Some of my notes are recorded here, including C/C&#43;&#43;, Robotics, ROS, Machine Learning, Deep Learning, etc." />
+    <meta property="twitter:description" content="Some of my notes are recorded here, including C/C&#43;&#43;, Robotics, ROS, Machine Learning, Deep Learning, etc." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="骆延东, Yandong Luo, Yandong Luo, , 骆延东的网站, Yandong Luo&#39;s Website, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>坐标系变化 | 骆延东的网站 | Yandong Luo&#39;s Website</title>
+
+    <link rel="canonical" href="/post/robotics/coordination-transformation/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [["$", "$"]],
+    },
+    displayMath: [
+      ["$$", "$$"],
+      ["\[\[", "\]\]"],
+    ],
+    svg: {
+      fontCache: "global",
+    },
+  };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+></script>
+
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Yandong Luo</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/tech">tech</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes/">NOTES</a></li>
+                    
+                        <li><a href="/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/arm.jpg')
+    }
+</style>
+
+<header class="intro-header" >
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/robotics" title="robotics">
+                            robotics
+                        </a>
+                        
+                    </div>
+                    <h1>坐标系变化</h1>
+                    <h2 class="subheading">机器人基础</h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                Yandong Luo
+                             
+                            on 
+                            Saturday, August 6, 2022
+                            
+                            
+                            
+                            
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h2 id="坐标系变化">坐标系变化</h2>
+<p>
+  <img src="/img/Robotics_image/Coordinate_transformation.png" alt="screenshot">
+
+</p>
+<p>在空间中存在一点P，在坐标系A中，该点的位置可以用向量$^{A}\vec{P}$表示，如果将A坐标系变换到B坐标系，在B坐标系该点则可以表达为$^{B}\vec{P}$，这里面存在一个关系如下
+$$
+^{A}\vec{P}=\left(\begin{matrix}^{A}x \
+^{A}y\
+^{A}z<br>
+\end{matrix}\right)
+=^{A}R_{B}\left(\begin{matrix}^{B}x \
+^{B}y\
+^{B}z<br>
+\end{matrix}\right)
+$$
+其中$^Bx$这些是$^{B}\vec{P}$的展开，$^{A}R_{B}$代表坐标系A到B的转换。</p>
+<h2 id="旋转变化">旋转变化</h2>
+<p>对于绕x,y,z轴旋转的变换矩阵可按下面表示，具体的推导不写了，就是将其转为2维平面的对换就知道了。这三个公式是要熟记的。
+$$
+R_x(\theta)=\left[\begin{matrix}1 &amp; 0 &amp;0 \\
+0&amp; cos\theta&amp;-sin\theta\\
+0&amp; sin\theta &amp; cos\theta\end{matrix}\right],
+\\\
+R_y(\theta)=\left[\begin{matrix}cos\theta &amp; 0 &amp;sin\theta \\
+0&amp; 1&amp;0\\
+-sin\theta&amp; 0 &amp; cos\theta\end{matrix}\right],\\
+R_z(\theta)=\left[\begin{matrix}cos\theta &amp; -sin\theta &amp;0 \\
+sin\theta&amp; cos\theta&amp;0\\
+0&amp; 0 &amp; 1\end{matrix}\right]
+$$</p>
+<h2 id="三次旋转连乘">三次旋转连乘</h2>
+<h5 id="fixed-angles法-点在a世界坐标系中的空间变换">Fixed Angles法 (点在{A}世界坐标系中的空间变换)</h5>
+<p>对于一个位姿，其实可以通过依次绕&rsquo;世界坐标系**(这个描述很重要)**x, y, z轴旋转某些角度得到，这个旋转矩阵可以表示为
+$$
+^A_BR_{xyz}(\gamma,\beta,\alpha) = R_{z}(\alpha)R_y(\beta)R_x(\gamma)
+$$
+其中，
+$$
+^A_BR_{xyz}(\gamma,\beta,\alpha)
+$$
+表示绕x,y,z轴分别转动$\gamma,\beta,\alpha$角度使得坐标系A到B。值得注意的是，这个的旋转顺序是先绕x轴转，再到y，再到z。那么为什么旋转矩阵的部分是zyx呢，因为这个一个旋转矩阵要乘上一个世界原始的坐标系在右边，那么按照旋转顺序，应该是x先转，那么绕x转的顺序放在最右边，依次类推。</p>
+<p>网上的理解是这样的: 可以理解为，点$^{B}\vec{P}$先做绕X轴做$\gamma$旋转变换，得到向量$\vec v$，接着$\vec v$做绕Y轴$\beta$旋转变换，得到向量$\vec w$，最后向量$\vec w$绕Z轴做$\alpha$旋转变换，得到$^A\vec{P}$，这是一个右乘计算，公式表示为：
+$$
+\begin{align}
+\vec{v}&amp;=R_{x}(\gamma)^{B}\vec{P},\\
+\vec{w}&amp;=R_{y}(\beta)\vec{v},\\
+^A\vec{P}&amp;=R_{z}(\alpha)\vec{w},\\
+^A\vec{P}&amp;=R_{z}(\alpha)R_{y}(\beta)R_{x}(\gamma)\vec{P_B}
+\end{align}
+$$</p>
+<p>这一个公式展开是
+$$
+\begin{align}
+^A_BR_{xyz}(\gamma,\beta,\alpha) &amp;=  R_{z}\alpha)R_y(\beta)R_x(\gamma)\\ &amp;=\left[\begin{matrix} cos(\alpha) &amp; -sin(\alpha) &amp; 0\\
+sin(\alpha) &amp; cos(\alpha) &amp;0\\
+0&amp;0&amp;1\end{matrix}\right] \left[\begin{matrix}cos\beta &amp; 0 &amp;sin\beta \\
+0&amp; 1&amp;0\\
+-sin\beta&amp; 0 &amp; cos\beta\end{matrix}\right]\left[\begin{matrix}1 &amp; 0 &amp;0 \\
+0&amp; cos\gamma&amp;-sin\gamma\\
+0&amp; sin\gamma &amp; cos\gamma\end{matrix}\right]\\ &amp;= \left[\begin{matrix}cos\alpha cos\beta&amp;cos\alpha sin\beta sin\gamma-sin\alpha cos\gamma&amp;cos\alpha sin\beta cos\gamma+sin\alpha sin\gamma\\
+sin\alpha cos\beta&amp;sin\alpha sin\beta sin\gamma+cos\alpha cos\gamma &amp; sin\alpha sin\beta cos\gamma-cos\alpha sin\gamma\\
+-sin\beta&amp;cos\beta sin\gamma&amp;cos\beta cos\gamma\end{matrix}\right]\\
+&amp;=\left[\begin{matrix}r_{11}&amp;r_{12}&amp;r_{13}\\
+r_{21}&amp;r_{22}&amp;r_{23}\\
+r_{31}&amp;r_{32}&amp;r_{33}\end{matrix}\right]
+\end{align}
+$$
+在旋转中，顺序很重要，不同的旋转顺序将导致不同位姿</p>
+<h2 id="逆解">逆解</h2>
+<p>如何由旋转矩阵计算各轴旋转的角度
+$$
+\begin{align}
+\text{if }\beta\neq90^o\\
+\beta &amp;= Atan2(-r_{31},(r_{11}^2+r_{21}^2)^{1/2})\\
+\alpha&amp;=Atan2(r_{21}/cos\beta,r_{11}/cos\beta)\\
+\gamma&amp;=Atan2(r_{32}/cos\beta,r_{33}/cos{\beta})
+\end{align}
+$$
+当$90^o\leq\beta\leq90^o$时，该公式才有唯一解</p>
+<h2 id="zyx-euler-angles法坐标系b相对于世界坐标系a的空间变换">ZYX Euler Angles法(坐标系{B}相对于世界坐标系{A}的空间变换)</h2>
+<p>这个方法其实就是代表着绕物体本身的坐标系(这个很重要)，先绕Z轴转动，然后Y轴转动，然后X轴转动，其数学表达式为:
+$$
+^A_BR_{zyx}(\alpha,\beta,\gamma) = R_{z}(\alpha)R_y(\beta)R_x(\gamma)
+$$
+为什么这里的旋转矩阵的展开是z, y, x呢，以<strong>mapping</strong>来想，对某一个向量，从<strong>最后一个frame</strong>【逐渐转动或移动】来回到第一个frame，</p>
+<p>因此这一个式子展开将和固定轴旋转展开的一模一样，对于位姿来说，也是一模一样的位姿</p>
+<h2 id="合并旋转和位移的矩阵">合并旋转和位移的矩阵</h2>
+<h3 id="先转动后移动">先转动后移动</h3>
+<p>$^AQ$移动的向量矩阵，$R_{K}(\theta)$旋转的矩阵，$^AP_1$为变换前P1在A坐标系下的向量，$^AP_2$变换后
+$$
+^AP_2=R_{K}(\theta)^AP_1+^AQ
+$$</p>
+<p>$$
+\begin{align}
+R_x(\theta)&amp;=\left[\begin{matrix}^{A}P_2\\1\end{matrix}\right]\\
+&amp;=\left[\begin{matrix}R_{K}(\theta) &amp; ^AQ\\ \text{0 0 0} &amp;1\end{matrix}\right]
+\left[\begin{matrix}^AP_{1}\\
+1\end{matrix}\right]=
+\left[\begin{matrix}R_{K}(\theta)^AP_{1}+ ^AQ\\
+1\end{matrix}\right]
+\end{align}
+$$</p>
+<p>也就是把位移矩阵和旋转矩阵写进一个4x4的矩阵里</p>
+<h3 id="先移动后转动">先移动后转动</h3>
+<p>$$
+^AP_2=R_{K}(\theta)(^AP_1+^AQ)
+$$</p>
+
+
+                
+
+                
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/robotics/forward_kinematics/" data-toggle="tooltip" data-placement="top" title="机械臂正向运动学">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/notes/" data-toggle="tooltip" data-placement="top" title="Notes">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
+                
+
+                
+
+
+
+            </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/robotics" title="robotics">
+                            robotics
+                        </a>
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:dongdashu.aa@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Yandong-Luo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yandong-chris-luo-48b1a8212/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Yandong Luo" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Yandong Luo 2022
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+
+
+</body>
+</html>

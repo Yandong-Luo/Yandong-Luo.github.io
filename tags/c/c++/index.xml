@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C/C&#43;&#43; on Yandong Luo</title>
+    <link>https://yandong-luo.github.io/tags/c/c&#43;&#43;/</link>
+    <description>Recent content in C/C&#43;&#43; on Yandong Luo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://yandong-luo.github.io/tags/c/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes</title>
+      <link>https://yandong-luo.github.io/notes/</link>
+      <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yandong-luo.github.io/notes/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Unfortunately, all notes are currently used in Chinese（目前只提供中文的笔记）&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Notes</title>
+      <link>https://yandong-luo.github.io/post/notes/</link>
+      <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://yandong-luo.github.io/post/notes/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Unfortunately, all notes are currently used in Chinese&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

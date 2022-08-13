@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <meta property="og:site_name" content="Yandong Luo">
+    <meta property="og:type" content="article">
+
+    
+    <meta property="og:image" content="https://yandong-luo.github.io//img/car1.jpg">
+    <meta property="twitter:image" content="https://yandong-luo.github.io//img/car1.jpg" />
+    
+
+    
+    <meta name="title" content="About Me" />
+    <meta property="og:title" content="About Me" />
+    <meta property="twitter:title" content="About Me" />
+    
+
+    
+    <meta name="description" content="I am currently a M.Eng. candidate for Autonomy &amp; Robotics at University of Illinois Urbana-Champaign (UIUC). Before joining UIUC, I was a Self-driving Car Engineer at Shenzhen Yelink Technology Co., Ltd.">
+    <meta property="og:description" content="I am currently a M.Eng. candidate for Autonomy &amp; Robotics at University of Illinois Urbana-Champaign (UIUC). Before joining UIUC, I was a Self-driving Car Engineer at Shenzhen Yelink Technology Co., Ltd." />
+    <meta property="twitter:description" content="I am currently a M.Eng. candidate for Autonomy &amp; Robotics at University of Illinois Urbana-Champaign (UIUC). Before joining UIUC, I was a Self-driving Car Engineer at Shenzhen Yelink Technology Co., Ltd." />
+    
+
+    
+    <meta property="twitter:card" content="summary" />
+    
+    
+
+    <meta name="keyword"  content="骆延东, Yandong Luo, Yandong Luo, , 骆延东的网站, Yandong Luo&#39;s Website, 博客, 个人网站">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>About Me | 骆延东的网站 | Yandong Luo&#39;s Website</title>
+
+    <link rel="canonical" href="/about/">
+
+    
+    
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/css/hugo-theme-cleanwhite.min.css">
+
+    
+    <link rel="stylesheet" href="/css/zanshang.css">
+
+    
+    <link href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.1/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    
+
+    
+    <script src="/js/jquery.min.js"></script>
+
+    
+    <script src="/js/bootstrap.min.js"></script>
+
+    
+    <script src="/js/hux-blog.min.js"></script>
+
+    
+    
+    
+</head>
+
+
+
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Yandong Luo</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">All Posts</a>
+                    </li>
+                    
+                        
+                        <li>
+                            <a href="/categories/tech">tech</a>
+                        </li>
+                        
+                    
+                    
+		    
+                        <li><a href="/archive/">ARCHIVE</a></li>
+                    
+                        <li><a href="/notes/">NOTES</a></li>
+                    
+                        <li><a href="/about/">ABOUT</a></li>
+                    
+
+                    
+		    <li>
+                        <a href="/search"><i class="fa fa-search"></i></a>
+		    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/img/car1.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                    <h1>Yandong Luo </h1>
+                    
+		    <span class="subheading">Having an absolute passion for driving, but committed to L5 autonomous driving development</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<article>
+    <div class="container">
+        <div class="row">
+            
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+            
+                 
+ <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" > 中文 | Chinese </option>
+    <option value="1" selected> 英文 | English </option>
+</select>
+                
+                
+                <div class="en post-container">
+                    <h2 id="about-me">About Me</h2>
+<p>I am currently a M.Eng. candidate for Autonomy &amp; Robotics at University of Illinois Urbana-Champaign (UIUC). Before joining UIUC, I was a Self-driving Car Engineer at Shenzhen Yelink Technology Co., Ltd.</p>
+<p>My research interests are in the intersection of autonomous driving, motion planning, and perception, whose goal is to improve the intelligence of autonomous driving by intelligent decision systems and robust perception systems.</p>
+<h2 id="education">Education</h2>
+<ul>
+<li>
+<p style="text-align:left;">
+    <b>University of Illinois Urbana-Champaign (UIUC)</b> 
+    <span style="float:right;">
+        2022.08 - 2023.12 (Expected)
+    </span>
+</p>
+<ul>
+<li>
+<p style="text-align:left;">
+    Candidate for <b>M.Eng. in Autonomy & Robotics</b> 
+    <span style="float:right;">
+        Urbana, IL, USA
+    </span>
+</p>
+</li>
+<li>
+<p>Current Courses: Autonomous Vehicle System Engineering, Deep Learning, Machine Learning</p>
+</li>
+</ul>
+</li>
+<li>
+<p style="text-align:left;">
+    <b>Northeastern University (NU)</b> 
+    <span style="float:right;">
+        2021.09 - 2022.05
+    </span>
+</p>
+<ul>
+<li>
+<p style="text-align:left;">
+    Candidate for <b>M.S. in Robotics (CS)</b> & Graduate Global Pathways (language program)
+    <span style="float:right;">
+        Boston, MA, USA
+    </span>
+</p>
+</li>
+<li>
+<p>Course: Robotics Science &amp; System (Arm Motion Planning, EKF-SLAM, PCI, RANSAC Algorithm, etc.)</p>
+</li>
+</ul>
+</li>
+<li>
+<p style="text-align:left;">
+    <b>Dongguan University of Technology (DGUT)</b> 
+    <span style="float:right;">
+        2015.09 - 2019.06
+    </span>
+</p>
+<ul>
+<li>
+<p style="text-align:left;">
+    Candidate for <b>B.Eng. Mechanical Engineering and Automation</b> (with IEET Accreditation) 
+    <span style="float:right;">
+        Dongguan, China
+    </span>
+</p>
+</li>
+<li>
+<p>Related Courses: Robotics and Machine Vision, Linear Algebra, C/C++, Theoretical Mechanics, etc.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="professional-experience">Professional Experience</h2>
+<ul>
+<li>
+<p style="text-align:left;">
+    <b>Self-driving Car Engineer (L4 Self-driving Car), Shenzhen YeLink Technology Co., Ltd.</b>
+    <span style="float:right;">
+        2020.7 - 2021.9
+    </span>
+</p>
+<ul>
+<li><strong>Autonomous Braking System for Train:</strong> Based on the Euclidean clustering algorithm to identify the people appearing in the tunnel, and then finished the autonomous braking task. (<a href="https://youtu.be/iXHDc-L6YHo">Tested in trains in Shenzhen</a>)</li>
+<li><strong>Perception:</strong> Synchronous processing of different Lidar data, fusing and Splicing point cloud data to reduce the perception blind spot of vehicles; Implement Pointpillars algorithms and Yolo3 to detect objects and person.</li>
+<li><strong>Autonomous Driving System Architecture:</strong> Deploy the perception, planning, and decision modules of vehicles and Simulation (Gazebo) based on ROS; Develop Android apps and software (based on QT) for testing and interacting the systems.</li>
+</ul>
+</li>
+<li>
+<p style="text-align:left;">
+    <b>Research Assistant, Guangdong Intelligent Equipment Engineering Research Center</b>
+    <span style="float:right;">
+        2019.7 - 2020.6
+    </span>
+</p>
+<ul>
+<li><strong>Fault Diagnosis of Industrial Robots:</strong> Used the level-based learning swarm optimizer (LLSO) to optimize the input weights and hidden layer biases of the Extreme Learning Machine (ELM) to further improve the generalization performance of ELM for fault diagnosis of industrial robotic arms with gear failures (with crack, broken tooth, pitting). [<a href="https://journals.sagepub.com/doi/full/10.1177/16878140211019540">Publication</a>]</li>
+<li><strong>Swarm Robotics:</strong> Setting up the mapping mechanism between the foraging driving principle of physarum polycephalum (a slime mold)
+and the swarm robot system to design a bio-inspired distributed search algorithm. The proposed algorithm improved the adaptability of swarm robots in limited communication circumstances and shows more efficiency when compared with other search strategies, including some search strategies trained from the Recurrent Neural Network (RNN). [<a href="https://www.hindawi.com/journals/complexity/2021/6698421/">Publication</a>]</li>
+</ul>
+</li>
+</ul>
+<h2 id="project">Project</h2>
+<p style="text-align:left;">
+    <font size=4><b>Autopilot on Cyberpunk 2077 Based on Convolutional Neural Network (CNN)</b>
+    <span style="float:right;">
+        2022.7 - 2022.8
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/cyberpunk1.jpg" style="float:left;" />
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Lane Line Detection:</b> Calculate the straight lines in the image based on Hough transform, and match similar line groups based on slope and intercept, and take the two most common line segments as the lane lines of the vehicle.
+    </p>
+    <p style="padding-left: 45%;">
+        <b>Autopilot:</b> Collecting the keyboard control and the frame of image, the AlexNet deep Convolutional Neural Network (CNN) based on TFLearn is trained, so that the vehicle can complete the automatic driving task.
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>Hybrid-Robotics, Autonomous Tennis Ball Collector</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/locobot.jpg" style="float:left;" height="300" width="300"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Pick up Function:</b> Training the robot to recognize tennis balls based on Cascade Classifier; Calculating the distance of tennis balls from the camera based on the camera matrix of the Realsense sensor and convert the position to the frame of arm; Based on MoveIt API to pick up the tennis ball.
+    </p>
+    <p style="padding-left: 45%;">
+        <b>SLAM & Navigation:</b> Implement Cartography-SLAM on robot and develop an RRT-autonomous SLAM function; Navigating to where the tennis ball is placed through a dynamic window algorithm (DWA).
+        <a href="https://github.com/Yandong-Luo/physical_locobot_ws">[Project Link]</a>
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>Multi-Robot Collaborative Search Based on Recurrent Neural Network (RNN)</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/rnn.gif" style="float:left;" height="300" width="330"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>End-to-End Learning:</b> By constructing a recurrent neural network (RNN), combined with genetic algorithm (GA) to iteratively train multi-robot system to learn to cooperate with each other and complete the search for targets. Built a fitness function based on the time consumption and the number of times the robot finds target objects.
+    </p>
+    <p style="padding-left: 45%;">
+        <b>Input & Output:</b> The input includes: the color signal of the LED lights of the group robot (group communication signal), the signal of the floor color recognition (judging whether to enter the target area), the distance and angle detected by the proximity sensor, and the output: the rotational speed of the differential wheel.
+        <a href="https://github.com/Yandong-Luo/Multi-Robot-Search--RNN">[Project Link]</a>
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>Fault Diagnosis of Industrial Robots by an Extreme Learning Machine</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/Fault Diagnosis.jpg" style="float:left;" height="200" width="250"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Introduction:</b> Designed an extreme learning machine (ELMs) with a level-based learning swarm optimizer (LLSO-ELM) for fault diagnosis of industrial robotic arms with gear failures, (including crack, broken tooth, pitting).
+    </p>
+    <p style="padding-left: 45%;">
+        <b>Implement:</b> Used the LLSO to optimize the input weights and hidden layer biases of the ELMs to further improve the
+generalization performance of ELMs. Compared the proposed LLSO-ELM with the ELM that verified the higher prediction accuracy of LLSO-ELM.
+        <a href="https://github.com/Yandong-Luo/physical_locobot_ws">[Publication]</a>
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>Target Search of Swarm Robot Imitating the Foraging Behavior of Physarum Polycephalum</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/physarum_polycephalum.jpg" style="float:left;" height="300" width="300"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Purpose:</b> In response to the limited communication in personnel search and rescue after earthquakes, I designed a novel multi-robot cooperative search strategy inspired by the foraging behavior of Phyllodes polycephalus (a slime mold).
+    </p>
+    <p style="padding-left: 45%;">
+        <b>Implement:</b> The proposed algorithm improved the adaptability of swarm robots in limited communication circumstances and shows more efficiency when compared with other search strategies, including some search strategies trained from the Recurrent Neural Network (RNN).
+        <a href="https://www.hindawi.com/journals/complexity/2021/6698421/">[Publication]</a>
+    </p>
+    <p style="padding-left: 45%;">
+        <b>Funding:</b> 200,000 RMB funded by Guangdong Provincial Department of Education.
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>Development of Stress Analysis Software for Civil Construction Components</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/qt.jpg" style="float:left;" />
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Purpose:</b> Collaborative project with Edinburgh Napier University, UK.
+    </p>
+    <p style="padding-left: 45%;">
+        <b>QT Development:</b> Develop a variety of RS485 sensor data acquisition systems, including inclination sensors, torque sensors, displacement sensors; involving multi-threading, slot function, serial port development, file operation, etc. The software can support the simultaneous reading of 16 sensor data, data storage, transmission verification, high-frequency reading and writing and other functions.
+        <a href="https://github.com/Yandong-Luo/Datalog">[Project]</a>
+    </p>
+</div>
+<h2 id="selected-publication">Selected Publication</h2>
+<ul>
+<li><strong>Yandong Luo</strong>, Jianwen Guo, Zhenpeng Lao, Shaohui Zhang, Xiaohui Yan, &ldquo;Swarm Robot Exploration Strategy for Path Formation Tasks Inspired by <em>Physarum polycephalum</em>&rdquo;, <em>Complexity</em>, vol. 2021, Article ID 6698421, 17 pages, 2021. <a href="https://doi.org/10.1155/2021/6698421">https://doi.org/10.1155/2021/6698421</a></li>
+<li>Guo, Jianwen, Xiaoyan Li, Zhenpeng Lao, <strong>Yandong Luo</strong>, Jiapeng Wu, and Shaohui Zhang. “Fault Diagnosis of Industrial Robot Reducer by an Extreme Learning Machine with a Level-Based Learning Swarm Optimizer.” Advances in Mechanical Engineering, (May 2021). <a href="https://doi.org/10.1177/16878140211019540">https://doi.org/10.1177/16878140211019540</a>.</li>
+<li><strong>Luo, Yandong</strong>, Jianwen Guo, Guoliang Ye, Yan Wang, Li Xie, Xiang Wang, Shaohui Zhang, and Xiaohui Yan. “Toward Target Search Approach of Swarm Robotics in Limited Communication Environment Based on Robot Chains with Elimination Mechanism.” International Journal of Advanced Robotic Systems, (May 2020). <a href="https://doi.org/10.1177/1729881420919954">https://doi.org/10.1177/1729881420919954</a>.</li>
+</ul>
+<h2 id="awards">Awards</h2>
+<ol>
+<li>Yang Chen-Ning Scholarship (Yang Chen-Ning, Nobel Laureate in Physics in 1957)</li>
+<li>Third prize in the “15th ‘Challenge Cup’ National University Students’ Extracurricular
+Academic Science and Technology Works Competition” (the highest achievement of school,
+457/1229 in China)</li>
+<li>First prize in the “14th ‘Challenge Cup’ Guangdong University Students’ Extracurricular
+Academic Science and Technology Works Competition” (the highest achievement of school,
+117/1123 in Guangdong Province)</li>
+<li>Silver Award of the 4th “Internet+” Innovation and Entrepreneurship Competition for
+University Students in Guangdong Province (the highest achievement of school, 25/120 in
+Guangdong Province)</li>
+<li>First Prize in the 6th “WaHaHa” National University Student Entrepreneurship Marketing
+Practice Competition (the highest achievement of school)</li>
+<li>Third Prize in 15th National Computer-Aided Team &amp; Individual Challenges (2D, CAD)
+12/2016</li>
+<li>Third Prize in 15th National Computer-Aided Team &amp; Individual Challenges (3D,
+SolidWorks) 12/2016</li>
+<li>Special Awards in the 7th “Challenge Cup” College Students Extracurricular Academic
+Science and Technology Competition, Dongguan University of Technology (Scientific and
+Technological Inventions Group) 09/2017</li>
+<li>Third Prize in the 7th “Challenge Cup” College Students Extracurricular Academic Science
+and Technology Competition, Dongguan University of Technology (Academic Papers Group)
+09/2017</li>
+<li>“Guangong Star” ——&ldquo;Team Star&rdquo;, Dongguan University of Technology 05/2018</li>
+<li>Third-class Scholarship, Dongguan University of Technology 10/2016</li>
+<li>Academic Scholarships, Dongguan University of Technology 10/2017</li>
+<li>Outstanding Students, Dongguan University of Technology 12/2017</li>
+<li>Academic Scholarships, Dongguan University of Technology 10/2018</li>
+<li>Excellent graduates, Dongguan University of Technology 06/2019</li>
+</ol>
+<h2 id="feedback">Feedback</h2>
+<p>If you find any problems or have some interest in these projects, please feel free to let me know that: <a href="mailto:dongdashu.aa@gmail.com">dongdashu.aa@gmail.com</a></p>
+
+                </div>
+                
+                
+                <div class="zh post-container">
+                    
+                    <h2 id="关于我">关于我</h2>
+<p>我目前是美国伊利诺伊大学厄巴纳-香槟分校（UIUC）的在读研究生，专业是Autonomy &amp; Robotics。 在加入 UIUC 之前，我是深圳渊联科技有限公司的自动驾驶汽车工程师。</p>
+<p>我的研究兴趣是自动驾驶、运动规划和感知的交叉领域，其目标是通过智能决策系统和鲁棒感知系统来提高自动驾驶的智能性。</p>
+<h2 id="教育经历">教育经历</h2>
+<ul>
+<li>
+<p style="text-align:left;">
+    <b>University of Illinois Urbana-Champaign (UIUC)</b> 
+    <span style="float:right;">
+        2022.08 - 2023.12 (预计毕业时间)
+    </span>
+</p>
+<ul>
+<li>
+<p style="text-align:left;">
+    专业： <b>M.Eng. in Autonomy & Robotics</b> 
+    <span style="float:right;">
+        厄巴纳, IL, USA
+    </span>
+</p>
+</li>
+<li>
+<p>当前课程：自动驾驶，机器学习，深度学习</p>
+</li>
+</ul>
+</li>
+<li>
+<p style="text-align:left;">
+    <b>Northeastern University (NU)</b> 
+    <span style="float:right;">
+        2021.09 - 2022.05
+    </span>
+</p>
+<ul>
+<li>
+<p style="text-align:left;">
+    专业： <b>M.S. in Robotics (CS)</b> & Graduate Global Pathways (语言课程)
+    <span style="float:right;">
+        波士顿, MA, USA
+    </span>
+</p>
+</li>
+<li>
+<p>Course: Robotics Science &amp; System (Arm Motion Planning, EKF-SLAM, PCI, RANSAC Algorithm, etc.)</p>
+</li>
+</ul>
+</li>
+<li>
+<p style="text-align:left;">
+    <b>Dongguan University of Technology (DGUT)</b> 
+    <span style="float:right;">
+        2015.09 - 2019.06
+    </span>
+</p>
+<ul>
+<li>
+<p style="text-align:left;">
+    专业： <b>机械设计制造及其自动化</b> 
+    <span style="float:right;">
+        东莞, China
+    </span>
+</p>
+</li>
+<li>
+<p>相关课程：机器人和机器视觉，线性代数，C/C++，理论力学等</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="工作经历">工作经历</h2>
+<ul>
+<li>
+<p style="text-align:left;">
+    <b>自动驾驶工程师, 深圳渊联科技有限公司</b>
+    <span style="float:right;">
+        2020.7 - 2021.9
+    </span>
+</p>
+<ul>
+<li><strong>地铁的自动刹车系统：</strong> 基于欧几里得聚类算法对点云数据进行聚类、识别是否有人出现在地铁的轨道中，并依据此完成地铁的的自动刹车任务。 (<a href="https://youtu.be/iXHDc-L6YHo">在深圳地铁中的测试</a>)</li>
+<li><strong>感知：</strong> 同步处理不同激光雷达数据，融合拼接点云数据，减少车辆感知盲区； 实施 Pointpillars 算法和 Yolo3 来检测物体和人。</li>
+<li><strong>自动驾驶系统架构：</strong> 部署基于ROS的车辆和仿真（Gazebo）的感知、规划和决策模块； 开发用于测试和交互系统的 Android 应用程序和软件（基于 QT）。</li>
+</ul>
+</li>
+<li>
+<p style="text-align:left;">
+    <b>研究助理，东莞理工学院机械工程学院</b>
+    <span style="float:right;">
+        2019.7 - 2020.6
+    </span>
+</p>
+<ul>
+<li><strong>工业机械臂故障诊断：</strong> 使用基于水平的学习群优化器（LLSO）对极限学习机（ELM）的输入权重和隐藏层偏差进行优化，进一步提高极限学习机在齿轮故障工业机械臂故障诊断中的泛化性能（有裂纹， 断齿，点蚀）。 [<a href="https://journals.sagepub.com/doi/full/10.1177/16878140211019540">论文</a>]</li>
+<li><strong>群体智能:</strong> 建立多头绒泡（一种粘菌）的觅食原理与群机器人系统的映射机制，设计仿生分布式搜索算法。 与其他搜索策略（包括一些从循环神经网络（RNN）训练的搜索策略）相比，所提出的算法提高了群机器人在有限通信环境下的适应性，并显示出更高的效率。 [<a href="https://www.hindawi.com/journals/complexity/2021/6698421/">论文</a>]</li>
+</ul>
+</li>
+</ul>
+<h2 id="project">Project</h2>
+<p style="text-align:left;">
+    <font size=4><b>基于卷积神经网络 (CNN) 的赛博朋克 2077 自动驾驶系统</b>
+    <span style="float:right;">
+        2022.7 - 2022.8
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/cyberpunk1.jpg" style="float:left;"  height="300" width="300"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>车道线检测:</b> 根据霍夫变换计算图像中的直线，根据斜率和截距匹配相似的线组，取最常见的两条线段作为车辆的车道线。并基于Open CV实时绘出在游戏画面中。
+    </p>
+    <p style="padding-left: 45%;">
+        <b>自动驾驶系统:</b> 收集每一时刻的键盘控制和图像帧作为输入，基于TFLearn训练的AlexNet深度卷积神经网络（CNN），使车辆通过学习玩家的操作数据完成自动驾驶任务。
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>Hybrid-Robotics, 拾取网球机器人</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/locobot.jpg" style="float:left;" height="270" width="270"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>拾取:</b> 采集机器人的工作环境，并用于Cascade Classifier训练机器人对网球进行识别；根据Realsense传感器的摄像头矩阵计算网球到摄像头的距离真实距离，并将位置转换为机械臂的坐标系中； 基于 MoveIt API 通过RRT算法对拾取网球行为进行规划和执行。
+    </p>
+    <p style="padding-left: 45%;">
+        <b>SLAM & Navigation:</b> 在机器人上基于Cartographer实现SLAM任务，并基于RRT算法的自主SLAM功能； 通过动态窗口算法 (DWA) 导航到放置网球的位置。（以上所有功能在Gazebo仿真和实际机器人中均有实现）
+        <a href="https://github.com/Yandong-Luo/physical_locobot_ws">[Project Link]</a>
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>基于循环神经网络（RNN）的多机器人协作搜索系统</b>
+    <span style="float:right;">
+        2020.1 - 2020.2
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/rnn.gif" style="float:left;" height="210" width="200"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>端到端的强化学习:</b> 通过构建循环神经网络（RNN），结合遗传算法（GA）迭代训练多机器人系统学习相互协作，完成对目标的搜索。 根据时间消耗和机器人找到目标物体的次数构建了适应度函数。
+    </p>
+    <p style="padding-left: 45%;">
+        <b>输入 & 输出:</b> 输入包括：群机器人LED灯颜色信号（群通信信号）、地板颜色识别信号（判断是否进入目标区域）、接近传感器检测到的距离和角度、 输出：差速轮的转速。
+        <a href="https://github.com/Yandong-Luo/Multi-Robot-Search--RNN">[Project Link]</a>
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>基于极限学习机的工业机器人故障诊断</b>
+    <span style="float:right;">
+        2019.7 - 2020.6
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/Fault Diagnosis.jpg" style="float:left;" height="200" width="160"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Introduction:</b> 设计了一个带有基于级别的学习群优化器 (LLSO-ELM) 的极限学习机 (ELM)，用于对具有齿轮故障（包括裂纹、断齿、点蚀）的工业机械臂进行故障诊断。
+    </p>
+    <p style="padding-left: 45%;">
+        <b>Implement:</b> 使用 LLSO 优化 ELM 的输入权重和隐藏层偏差，以进一步提高 ELM 的泛化性能。 将提出的 LLSO-ELM 与 ELM 进行比较，验证了 LLSO-ELM 的更高预测精度。
+        <a href="https://journals.sagepub.com/doi/full/10.1177/16878140211019540">[Publication]</a>
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>仿多头绒泡觅食行为的群机器人目标搜索</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/physarum_polycephalum.jpg" style="float:left;" height="230" width="230"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>目的:</b> 针对地震等自然灾难事故发生后人员搜救通信受限的问题，我启发于多头绒泡菌（一种黏菌）的觅食行为，设计了一种新颖的多机器人协同搜索策略。
+    </p>
+    <p style="padding-left: 45%;">
+        <b>实现:</b> 与其他搜索策略（包括一些从循环神经网络（RNN）训练的搜索策略）相比，所提出的算法提高了群机器人在有限通信环境下的适应性，并显示出更高的效率。
+        <a href="https://www.hindawi.com/journals/complexity/2021/6698421/">[Publication]</a>
+    </p>
+    <p style="padding-left: 45%;">
+        <b>资助:</b> 获广东省教育厅20万资助。
+    </p>
+</div>
+<p style="text-align:left;">
+    <font size=4><b>土木建筑构件应力分析软件的开发</b>
+    <span style="float:right;">
+        2022.4 - 2022.5
+        </span></font>
+</p>
+<div style="width:40%;">
+	<img src="/img/qt.jpg" style="float:left;" height="230" width="290"/>
+</div>
+<div style="width:100%;">
+	<p style="padding-left: 45%;">
+        <b>Purpose:</b> 与英国爱丁堡龙比亚大学的合作项目
+    </p>
+    <p style="padding-left: 45%;">
+        <b>QT 开发:</b> 开发多种RS485传感器数据采集系统，包括倾角传感器、扭矩传感器、位移传感器； 涉及多线程、槽函数、串口开发、文件操作等。软件可支持16个传感器数据同时读取、数据存储、传输校验、高频读写等功能。
+        <a href="https://github.com/Yandong-Luo/Datalog">[Project]</a>
+    </p>
+</div>
+<h2 id="论文">论文</h2>
+<ul>
+<li><strong>Yandong Luo</strong>, Jianwen Guo, Zhenpeng Lao, Shaohui Zhang, Xiaohui Yan, &ldquo;Swarm Robot Exploration Strategy for Path Formation Tasks Inspired by <em>Physarum polycephalum</em>&rdquo;, <em>Complexity</em>, vol. 2021, Article ID 6698421, 17 pages, 2021. <a href="https://doi.org/10.1155/2021/6698421">https://doi.org/10.1155/2021/6698421</a></li>
+<li>Guo, Jianwen, Xiaoyan Li, Zhenpeng Lao, <strong>Yandong Luo</strong>, Jiapeng Wu, and Shaohui Zhang. “Fault Diagnosis of Industrial Robot Reducer by an Extreme Learning Machine with a Level-Based Learning Swarm Optimizer.” Advances in Mechanical Engineering, (May 2021). <a href="https://doi.org/10.1177/16878140211019540">https://doi.org/10.1177/16878140211019540</a>.</li>
+<li><strong>Luo, Yandong</strong>, Jianwen Guo, Guoliang Ye, Yan Wang, Li Xie, Xiang Wang, Shaohui Zhang, and Xiaohui Yan. “Toward Target Search Approach of Swarm Robotics in Limited Communication Environment Based on Robot Chains with Elimination Mechanism.” International Journal of Advanced Robotic Systems, (May 2020). <a href="https://doi.org/10.1177/1729881420919954">https://doi.org/10.1177/1729881420919954</a>.</li>
+</ul>
+<h2 id="奖项">奖项</h2>
+<ol>
+<li>杨振宁奖学金</li>
+<li>第十五届挑战杯全国大学生课外学术科技作品竞赛三等奖 (项目负责人)</li>
+<li>广东省第四届“互联网+”大学生创新创业大赛银奖</li>
+<li>第六届“娃哈哈”全国大学生创业营销实践大赛第一名</li>
+<li>全国第十五届CaTICs网络赛（CAD，二维）三等奖（2016年12月）</li>
+<li>全国第十五届CaTICs网络赛（SolidWorks，三维）三等奖（2016年12月）</li>
+<li>“莞工之星” ——&ldquo;团队之星&rdquo;</li>
+<li>三等奖学金</li>
+<li>学术奖学金</li>
+<li>优秀大学生</li>
+<li>优秀大学生</li>
+</ol>
+
+                </div>
+            
+                
+            
+             
+            
+
+
+
+            
+            </div>
+            
+            
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+	
+    <section class="visible-md visible-lg">
+	
+        <div class="short-about">
+            
+            <a href="/top/about">
+               <img src="/img/Chris.jpg" alt="avatar" style="cursor: pointer" />
+            </a>
+            
+            
+                <p>Yandong Luo (骆延东), UIUC student, Former Self-driving car Engineer and Life Adventurer</p>
+            
+           
+           <ul class="list-inline">
+               
+               <li>
+                   <a href="mailto:dongdashu.aa@gmail.com">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                      </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/Yandong-Luo">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.linkedin.com/in/yandong-chris-luo-48b1a8212/">
+                       <span class="fa-stack fa-lg">
+                           <i class="fas fa-circle fa-stack-2x"></i>
+                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+            
+            
+            
+               
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+	
+    
+    
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+            
+            
+               
+            
+               
+            
+               
+            
+               
+                    <a href="/tags/robotics" title="robotics">
+                        robotics
+                    </a>
+               
+            
+        </div>
+    </section>
+    
+
+    
+    
+    
+</div>
+
+        </div>
+    </div>
+</article>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">                  
+                    
+                    <li>
+                        <a href="mailto:dongdashu.aa@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    
+                    
+
+		            
+                    
+                    <li>
+                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Yandong-Luo">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		            
+                    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/yandong-chris-luo-48b1a8212/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		           
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+            
+            
+            
+           
+                   <li>
+                       <a href='' rel="alternate" type="application/rss+xml" title="Yandong Luo" >
+                           <span class="fa-stack fa-lg">
+                               <i class="fas fa-circle fa-stack-2x"></i>
+                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                           </span>
+                       </a>
+                   </li>
+            
+             </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Yandong Luo 2022
+                    <br>
+                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function loadAsync(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        loadAsync("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        
+        
+        
+        
+            _containerSelector = 'div.post-container'
+        
+
+        
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        
+        $(selector).html('')
+
+        
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    
+
+
+    loadAsync("\/js\/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $select = document.querySelector("select");
+
+    
+    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
+
+    function setLang(newLang) {
+        var params = new URLSearchParams(document.location.search)
+        params.set("lang", newLang)
+        document.location.search = params.toString()  
+    }
+
+    
+    function _render() {
+        var lang = getLang()
+        
+        if (lang == "en") {
+            
+            $select.selectedIndex = 0;
+            $zh.style.display = "block";
+            $zh.classList.add("active");
+            $en.style.display = "none";
+            $en.classList.remove("active");
+            
+        } else {
+            $select.selectedIndex = 1;
+            $en.style.display = "block";
+            $en.classList.add("active");
+            $zh.style.display = "none";
+            $zh.classList.remove("active");
+        }
+        
+        generateCatalog(".catalog-body");
+    }
+
+    
+    function onLanChange(index) {
+        if (index == 1) {
+            lang = "zh"
+        } else {
+            lang = "en"
+        }
+        setLang(lang)
+    }
+
+    
+    _render();
+</script>
+
+
+
+</body>
+</html>
