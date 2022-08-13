@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Yandong Luo</title>
-    <link>https://yandong-luo.github.io/categories/</link>
+    <link>https://zhaohuabing.com/categories/</link>
     <description>Recent content in Categories on Yandong Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yandong-luo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zhaohuabing.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tech</title>
-      <link>https://yandong-luo.github.io/categories/tech/</link>
+      <link>https://zhaohuabing.com/categories/tech/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://yandong-luo.github.io/categories/tech/</guid>
+      <guid>https://zhaohuabing.com/categories/tech/</guid>
       <description></description>
     </item>
     
