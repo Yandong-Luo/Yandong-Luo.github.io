@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yandong Luo</title>
-    <link>https://zhaohuabing.com/</link>
+    <link>https://yandong-luo.github.io/</link>
     <description>Recent content on Yandong Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zhaohuabing.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yandong-luo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
-      <link>https://zhaohuabing.com/about/</link>
+      <link>https://yandong-luo.github.io/about/</link>
       <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/about/</guid>
+      <guid>https://yandong-luo.github.io/about/</guid>
       <description>About Me I am currently a M.Eng. candidate for Autonomy &amp;amp; Robotics at University of Illinois Urbana-Champaign (UIUC). Before joining UIUC, I was a Self-driving Car Engineer at Shenzhen Yelink Technology Co., Ltd.
 My research interests are in the intersection of autonomous driving, motion planning, and perception, whose goal is to improve the intelligence of autonomous driving by intelligent decision systems and robust perception systems.
 Education University of Illinois Urbana-Champaign (UIUC) 2022.</description>
@@ -20,10 +20,10 @@ Education University of Illinois Urbana-Champaign (UIUC) 2022.</description>
     
     <item>
       <title>About Me</title>
-      <link>https://zhaohuabing.com/post/resume/</link>
+      <link>https://yandong-luo.github.io/post/resume/</link>
       <pubDate>Mon, 08 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/resume/</guid>
+      <guid>https://yandong-luo.github.io/post/resume/</guid>
       <description>About Me I am currently a M.Eng. candidate for Autonomy &amp;amp; Robotics at University of Illinois Urbana-Champaign (UIUC). Before joining UIUC, I was a Self-driving Car Engineer at Shenzhen Yelink Technology Co., Ltd.
 My research interests are in the intersection of autonomous driving, motion planning, and perception, whose goal is to improve the intelligence of autonomous driving by intelligent decision systems and robust perception systems.
 Education University of Illinois Urbana-Champaign (UIUC) 2022.</description>
@@ -31,19 +31,19 @@ Education University of Illinois Urbana-Champaign (UIUC) 2022.</description>
     
     <item>
       <title>Publications</title>
-      <link>https://zhaohuabing.com/post/publications/</link>
+      <link>https://yandong-luo.github.io/post/publications/</link>
       <pubDate>Sun, 07 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/publications/</guid>
+      <guid>https://yandong-luo.github.io/post/publications/</guid>
       <description>Publication Yandong Luo, Jianwen Guo, Zhenpeng Lao, Shaohui Zhang, Xiaohui Yan, &amp;ldquo;Swarm Robot Exploration Strategy for Path Formation Tasks Inspired by Physarum polycephalum&amp;rdquo;, Complexity, vol. 2021, Article ID 6698421, 17 pages, 2021. https://doi.org/10.1155/2021/6698421 Guo, Jianwen, Xiaoyan Li, Zhenpeng Lao, Yandong Luo, Jiapeng Wu, and Shaohui Zhang. “Fault Diagnosis of Industrial Robot Reducer by an Extreme Learning Machine with a Level-Based Learning Swarm Optimizer.” Advances in Mechanical Engineering, (May 2021). https://doi.org/10.1177/16878140211019540. Luo, Yandong, Jianwen Guo, Guoliang Ye, Yan Wang, Li Xie, Xiang Wang, Shaohui Zhang, and Xiaohui Yan.</description>
     </item>
     
     <item>
       <title>Notes</title>
-      <link>https://zhaohuabing.com/notes/</link>
+      <link>https://yandong-luo.github.io/notes/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/notes/</guid>
+      <guid>https://yandong-luo.github.io/notes/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Unfortunately, all notes are currently used in Chinese（目前只提供中文的笔记）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -51,10 +51,10 @@ Education University of Illinois Urbana-Champaign (UIUC) 2022.</description>
     
     <item>
       <title>Notes</title>
-      <link>https://zhaohuabing.com/post/notes/</link>
+      <link>https://yandong-luo.github.io/post/notes/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/notes/</guid>
+      <guid>https://yandong-luo.github.io/post/notes/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Unfortunately, all notes are currently used in Chinese&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -62,55 +62,55 @@ Education University of Illinois Urbana-Champaign (UIUC) 2022.</description>
     
     <item>
       <title>坐标系变化</title>
-      <link>https://zhaohuabing.com/post/robotics/coordination-transformation/</link>
+      <link>https://yandong-luo.github.io/post/robotics/coordination-transformation/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/coordination-transformation/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/coordination-transformation/</guid>
       <description>坐标系变化 在空间中存在一点P，在坐标系A中，该点的位置可以用向量$^{A}\vec{P}$表示，如果将A坐标系变换到B坐标系，在B坐标系该点</description>
     </item>
     
     <item>
       <title>机械臂正向运动学</title>
-      <link>https://zhaohuabing.com/post/robotics/forward_kinematics/</link>
+      <link>https://yandong-luo.github.io/post/robotics/forward_kinematics/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/forward_kinematics/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/forward_kinematics/</guid>
       <description>机械臂正向运动 DH建模 针对机械臂各个关节的姿态变化采用的是DH建模法。每个关节的都建立坐标系，而每个关节坐标系之间的关系便是通过DH的四个参</description>
     </item>
     
     <item>
       <title>机械臂轨迹规划</title>
-      <link>https://zhaohuabing.com/post/robotics/motion_planning/</link>
+      <link>https://yandong-luo.github.io/post/robotics/motion_planning/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/motion_planning/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/motion_planning/</guid>
       <description>轨迹规划 轨迹的规划方式有两种，一种是在joint-space下进行，一种是在Cartesian-space下进行。 Joint-space Joint-space的</description>
     </item>
     
     <item>
       <title>雅克比矩阵</title>
-      <link>https://zhaohuabing.com/post/robotics/jacobian-matrix/</link>
+      <link>https://yandong-luo.github.io/post/robotics/jacobian-matrix/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/jacobian-matrix/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/jacobian-matrix/</guid>
       <description>雅可比矩阵（Jacobian Matrix） 对于一个机械臂来说，比如上图，其末端点$\vec{p}$的表达式为 $$ \vec{p} = \left[\begin{matrix}l_1cos(q_1)+l_2cos(q_1+q_2)\ l_1sin(q_1)+l_2sin(q_1+q_2)\end{matrix}\right] $$ 对其位置进行q的求导</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://zhaohuabing.com/search/placeholder/</link>
+      <link>https://yandong-luo.github.io/search/placeholder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/search/placeholder/</guid>
+      <guid>https://yandong-luo.github.io/search/placeholder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posts Archive</title>
-      <link>https://zhaohuabing.com/archive/</link>
+      <link>https://yandong-luo.github.io/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/archive/</guid>
+      <guid>https://yandong-luo.github.io/archive/</guid>
       <description></description>
     </item>
     

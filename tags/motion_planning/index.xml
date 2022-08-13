@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>motion_planning on Yandong Luo</title>
-    <link>https://zhaohuabing.com/tags/motion_planning/</link>
+    <link>https://yandong-luo.github.io/tags/motion_planning/</link>
     <description>Recent content in motion_planning on Yandong Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zhaohuabing.com/tags/motion_planning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yandong-luo.github.io/tags/motion_planning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>机械臂轨迹规划</title>
-      <link>https://zhaohuabing.com/post/robotics/motion_planning/</link>
+      <link>https://yandong-luo.github.io/post/robotics/motion_planning/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/motion_planning/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/motion_planning/</guid>
       <description>轨迹规划 轨迹的规划方式有两种，一种是在joint-space下进行，一种是在Cartesian-space下进行。 Joint-space Joint-space的</description>
     </item>
     

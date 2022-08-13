@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>robotics on Yandong Luo</title>
-    <link>https://zhaohuabing.com/tags/robotics/</link>
+    <link>https://yandong-luo.github.io/tags/robotics/</link>
     <description>Recent content in robotics on Yandong Luo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://zhaohuabing.com/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://yandong-luo.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Notes</title>
-      <link>https://zhaohuabing.com/notes/</link>
+      <link>https://yandong-luo.github.io/notes/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/notes/</guid>
+      <guid>https://yandong-luo.github.io/notes/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Unfortunately, all notes are currently used in Chinese（目前只提供中文的笔记）&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Notes</title>
-      <link>https://zhaohuabing.com/post/notes/</link>
+      <link>https://yandong-luo.github.io/post/notes/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/notes/</guid>
+      <guid>https://yandong-luo.github.io/post/notes/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;Unfortunately, all notes are currently used in Chinese&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -31,37 +31,37 @@
     
     <item>
       <title>坐标系变化</title>
-      <link>https://zhaohuabing.com/post/robotics/coordination-transformation/</link>
+      <link>https://yandong-luo.github.io/post/robotics/coordination-transformation/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/coordination-transformation/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/coordination-transformation/</guid>
       <description>坐标系变化 在空间中存在一点P，在坐标系A中，该点的位置可以用向量$^{A}\vec{P}$表示，如果将A坐标系变换到B坐标系，在B坐标系该点</description>
     </item>
     
     <item>
       <title>机械臂正向运动学</title>
-      <link>https://zhaohuabing.com/post/robotics/forward_kinematics/</link>
+      <link>https://yandong-luo.github.io/post/robotics/forward_kinematics/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/forward_kinematics/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/forward_kinematics/</guid>
       <description>机械臂正向运动 DH建模 针对机械臂各个关节的姿态变化采用的是DH建模法。每个关节的都建立坐标系，而每个关节坐标系之间的关系便是通过DH的四个参</description>
     </item>
     
     <item>
       <title>机械臂轨迹规划</title>
-      <link>https://zhaohuabing.com/post/robotics/motion_planning/</link>
+      <link>https://yandong-luo.github.io/post/robotics/motion_planning/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/motion_planning/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/motion_planning/</guid>
       <description>轨迹规划 轨迹的规划方式有两种，一种是在joint-space下进行，一种是在Cartesian-space下进行。 Joint-space Joint-space的</description>
     </item>
     
     <item>
       <title>雅克比矩阵</title>
-      <link>https://zhaohuabing.com/post/robotics/jacobian-matrix/</link>
+      <link>https://yandong-luo.github.io/post/robotics/jacobian-matrix/</link>
       <pubDate>Sat, 06 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://zhaohuabing.com/post/robotics/jacobian-matrix/</guid>
+      <guid>https://yandong-luo.github.io/post/robotics/jacobian-matrix/</guid>
       <description>雅可比矩阵（Jacobian Matrix） 对于一个机械臂来说，比如上图，其末端点$\vec{p}$的表达式为 $$ \vec{p} = \left[\begin{matrix}l_1cos(q_1)+l_2cos(q_1+q_2)\ l_1sin(q_1)+l_2sin(q_1+q_2)\end{matrix}\right] $$ 对其位置进行q的求导</description>
     </item>
     
